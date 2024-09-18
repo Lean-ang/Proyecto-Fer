@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    background: rgb(255,132,0);
+    background: linear-gradient(0deg, rgba(255,132,0,0.8295693277310925) 0%, rgba(255,188,0,1) 34%);
+   
+  }
+  body {
+    background-color: rgb(255, 187, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
+  footer{
+    padding: 15px;
+    position: relative;
+    background: rgb(255,178,0);
+    background: linear-gradient(0deg, rgba(255,178,0,1) 18%, rgba(255,188,0,1) 76%, rgba(255,132,0,1) 100%);
+  }
+  footer ul {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  footer ul li {
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  footer ul li:hover {
+    cursor: pointer;
+    color: rgb(0, 61, 255);
+  }
+  
+  .iconfb {
+    padding-right: 20px;
+  }
+  /* Index Grid BootStrap =============================*/
+.titulos-index, .titulo-contacto {
+  font-family: "Yaldevi";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border-bottom: rgb(255, 255, 255) solid 2px;
+  border-radius: 20px;
+}
+
+.video-index, .ubicacion-index {
+  margin-top: 60px;
+}
+
+.grid-container {
+  padding: 60px;
+}
+
+@media (max-width: 768px) {
+  .video-index, .ubicacion-index {
+    margin-top: 5px;
+  }
+  .grid-container {
+    padding: 0px;
+  }
+}
